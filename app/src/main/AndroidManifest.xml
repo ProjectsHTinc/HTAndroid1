@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hst.osa_tatva">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29"/>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT" />
+        </intent>
+    </queries>
+
+    <application
+        android:name="com.hst.osa_tatva.app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNoActionBarLogin"
+        android:usesCleartextTraffic="true">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service
+            android:name="com.hst.osa_tatva.fcm.MyFirebaseMessagingService"
+            android:exported="false"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/purple_200" />
+
+        <activity android:name="com.hst.osa_tatva.activity.SplashscreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hst.osa_tatva.activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.LoginActivity"
+            android:label="@string/sign"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.EmailLoginActivity"
+            android:label="@string/sign"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.hst.osa_tatva.activity.NumberVerificationActivity"
+            android:label="@string/otp_page"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.hst.osa_tatva.activity.PasswordActivity"
+            android:label="@string/password"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.hst.osa_tatva.activity.ForgotPassword"
+            android:label="@string/reset"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.hst.osa_tatva.activity.SignupActivity"
+            android:label="@string/signUp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.hst.osa_tatva.activity.CategoryActivity"
+            android:label="@string/category"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.hst.osa_tatva.activity.SubCategoryActivity"
+            android:label="@string/category"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.hst.osa_tatva.activity.ProductDetailActivity"
+            android:label="@string/category"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.hst.osa_tatva.activity.SearchResultActivity"
+            android:label="@string/category"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.hst.osa_tatva.activity.CartActivity"
+            android:label="@string/cart"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.hst.osa_tatva.activity.ShippingAddressActivity"
+            android:label="@string/address"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.hst.osa_tatva.activity.AddAddressActivity"
+            android:label="@string/address"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.hst.osa_tatva.activity.CheckoutActivity"
+            android:label="@string/check_out"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.ReviewOrderActivity"
+            android:label="@string/review_order"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.WalletActivity"
+            android:label="@string/wallet"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.WalletAddMoneyActivity"
+            android:label="@string/wallet"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.OrderHistoryActivity"
+            android:label="@string/go_orders"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.OrderHistoryDetailPage"
+            android:label="@string/go_orders"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.ReplaceProductActivity"
+            android:label="@string/go_orders"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.TrackOrderActivity"
+            android:label="@string/go_orders"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.AdvancedFilterActivity"
+            android:label="@string/go_orders"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.AdvanceFilterResultActivity"
+            android:label="@string/go_orders"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.ccavenue.activity.InitialScreenActivity"
+            android:label="@string/payment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.ccavenue.activity.MainActivity"
+            android:label="@string/payment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.ccavenue.activity.StatusActivity"
+            android:label="@string/payment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.ccavenue.activity.WebViewActivity"
+            android:label="@string/payment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.WishListActivity"
+            android:label="@string/favourite"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.EditProfile"
+            android:label="@string/profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.NotificationActivity"
+            android:label="@string/notification"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.ChangePasswordActivity"
+            android:label="@string/change_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hst.osa_tatva.activity.SettingsActivity"
+            android:label="@string/side_menu_settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBarLogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

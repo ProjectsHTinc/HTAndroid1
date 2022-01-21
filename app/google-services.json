@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "831280335880",
+    "project_id": "osatatva",
+    "storage_bucket": "osatatva.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831280335880:android:d85154160f40b5a9ad95bd",
+        "android_client_info": {
+          "package_name": "com.hst.osa_tatva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831280335880-4emhbvs0uu46e3q9h7eur28vfcah7k3g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hst.osa_tatva",
+            "certificate_hash": "83123ff7d5aec11df606b92d1f1538aabcd20ce8"
+          }
+        },
+        {
+          "client_id": "831280335880-v82vo93oe2cnja949oqn6qvcda8adirn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDikxBYnzQeC4bfkitU2gW9pSYqxHl_h-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831280335880-v82vo93oe2cnja949oqn6qvcda8adirn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
