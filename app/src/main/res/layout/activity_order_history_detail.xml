@@ -544,7 +544,7 @@
             android:fontFamily="@font/medium"
             android:gravity="center"
             android:text="@string/track_order"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
 

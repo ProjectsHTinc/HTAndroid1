@@ -37,7 +37,7 @@
         <item
             android:id="@+id/nav_address"
             android:icon="@drawable/ic_side_menu_address"
-            android:title="@string/side_menu_wallet" />
+            android:title="@string/side_menu_address" />
 
         <item
             android:id="@+id/nav_settings"

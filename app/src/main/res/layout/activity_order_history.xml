@@ -84,7 +84,7 @@
                 android:padding="10dp"
                 android:text="@string/delivered"
                 android:textAllCaps="false"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="14sp" />
 
             <TextView

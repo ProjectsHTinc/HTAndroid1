@@ -278,7 +278,7 @@
                     android:background="@drawable/btn_round_colour"
                     android:text="@string/save_address"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
             </LinearLayout>

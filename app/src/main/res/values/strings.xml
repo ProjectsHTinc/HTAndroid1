@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KoodaiApp</string>
+    <string name="app_name">Tatva</string>
     <string name="splashscreen_tagline">Passion for Shop</string>
     <string name="welcome_start">Get Started</string>
     <string name="welcome_sign">Let’s sign you in</string>
@@ -88,6 +88,7 @@
     <string name="notify_return">Return To Homepage</string>
     <string name="notify">No Notifications Here</string>
     <string name="clear">Clear all</string>
+    <string name="app_version">Version 1.0</string>
 
     <!-- Product Detail -->
     <string name="detail">Detail</string>
@@ -234,7 +235,7 @@
     <string name="about">About Us</string>
     <string name="pri_sec"><![CDATA[Privacy & Security]]></string>
     <string name="help"><![CDATA[Help & Support]]></string>
-    <string name="receive_notify">Receive Notification</string>
+    <string name="receive_notify">Receive Notifications</string>
     <string name="cfm_password">Confirm Password</string>
     <string name="new_password">New Password</string>
     <string name="cr_new_password">Your New password must be different from your previous used password</string>
@@ -242,6 +243,6 @@
     <string name="password_match">Password Match</string>
     <string name="password_error">Password not Match</string>
     <string name="new_notify">New Notification</string>
-    <string name="receive_news">Receivee Newsletter</string>
+    <string name="receive_news">Receive Newsletter</string>
 
 </resources>

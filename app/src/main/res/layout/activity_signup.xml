@@ -180,10 +180,25 @@
                             android:gravity="center"
                             android:text="@string/signUp"
                             android:textAllCaps="false"
-                            android:textColor="@color/black"
+                            android:textColor="@color/white"
                             android:textSize="18sp" />
 
                     </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btn_signup"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/medium"
+                        android:text="@string/or"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -196,14 +211,13 @@
                             android:id="@+id/btn_gg_login"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginHorizontal="50dp"
                             android:layout_marginTop="20dp"
                             android:background="@drawable/ek_btn_google_color"
-                            android:drawablePadding="10dp"
+                            android:drawablePadding="5dp"
+                            android:paddingHorizontal="5dp"
                             android:fontFamily="@font/regular"
                             android:gravity="center"
-                            android:paddingHorizontal="20dp"
                             android:text="@string/ggLogIn"
                             android:textAllCaps="false"
                             android:textColor="@color/white"

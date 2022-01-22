@@ -189,7 +189,7 @@
                         android:gravity="center"
                         android:text="@string/signIn"
                         android:textAllCaps="false"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="18sp" />
 
                     <View

@@ -266,7 +266,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/txt_size"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="9dp"
                             android:orientation="horizontal"
                             android:padding="1dp" />
 
@@ -612,7 +612,7 @@
             android:fontFamily="@font/medium"
             android:gravity="center"
             android:text="@string/add_cart"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="18sp" />
 
     </RelativeLayout>

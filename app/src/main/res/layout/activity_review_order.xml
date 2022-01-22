@@ -351,8 +351,8 @@
             android:fontFamily="@font/semibold"
             android:gravity="center"
             android:text="@string/place_order"
-            android:textColor="@color/black"
-            android:textSize="18sp"/>
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
     </RelativeLayout>
 
