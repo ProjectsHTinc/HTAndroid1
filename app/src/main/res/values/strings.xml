@@ -88,7 +88,7 @@
     <string name="notify_return">Return To Homepage</string>
     <string name="notify">No Notifications Here</string>
     <string name="clear">Clear all</string>
-    <string name="app_version">Version 1.0</string>
+<!--    <string name="app_version">1.0.debug</string>-->
 
     <!-- Product Detail -->
     <string name="detail">Detail</string>

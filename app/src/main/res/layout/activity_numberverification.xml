@@ -61,13 +61,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/otp_note"
-                        android:gravity="center"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/semibold"
+                        android:gravity="center"
                         android:text=""
                         android:textColor="@color/app_color"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/otp_msg"

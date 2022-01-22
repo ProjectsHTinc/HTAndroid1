@@ -4,7 +4,7 @@
         <layer-list>
             <item>
                 <shape>
-                    <gradient android:angle="270" android:startColor="@color/gradient_start" android:endColor="@color/gradient_end"/>
+                    <gradient android:angle="270" android:startColor="@color/app_color" android:endColor="@color/gradient_end"/>
                 </shape>
             </item>
         </layer-list>

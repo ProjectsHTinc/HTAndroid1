@@ -66,6 +66,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private static final String TAG = LoginActivity.class.getName();
 
     private TextView btnFacebook, btnGoogle, txtUseEmail, txtUseNumber, txtSignUp, forgotPassword, btnContinue;
+    private View line_signIn;
     private TextInputLayout tiNumber, tiEmail, tiPassword;
     private ServiceHelper serviceHelper;
     private ProgressDialogHelper progressDialogHelper;
@@ -127,6 +128,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         tiPassword = findViewById(R.id.ti_password);
         txtPassword = findViewById(R.id.txt_password);
+
+        line_signIn = findViewById(R.id.line_sign);
 
         btnContinue = findViewById(R.id.btn_login);
         btnFacebook = findViewById(R.id.btn_fb_login);
@@ -231,6 +234,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             loginMethod = "email";
             layoutEmail.setVisibility(View.VISIBLE);
             layoutNumber.setVisibility(View.GONE);
+            line_signIn.setVisibility(View.VISIBLE);
             txtUseNumber.setVisibility(View.VISIBLE);
         }
         if (v == txtUseNumber) {

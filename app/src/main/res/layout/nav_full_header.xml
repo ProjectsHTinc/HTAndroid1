@@ -41,7 +41,7 @@
                 android:fontFamily="@font/semibold"
                 android:padding="5dp"
                 android:text="Hello, Sign In"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
 
             <TextView
@@ -52,7 +52,7 @@
                 android:text="@string/mail"
                 android:fontFamily="@font/regular"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
