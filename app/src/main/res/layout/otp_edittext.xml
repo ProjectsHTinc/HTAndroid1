@@ -9,8 +9,8 @@
 
     <EditText
         android:id="@+id/otp_one_edit_text"
-        android:layout_width="65dp"
-        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/regular"
@@ -19,13 +19,14 @@
         android:textSize="24sp"
         android:maxLength="1"
         android:maxLines="1"
+
         android:nextFocusLeft="@+id/otp_one_edit_text"
         android:nextFocusRight="@+id/otp_two_edit_text" />
 
     <EditText
         android:id="@+id/otp_two_edit_text"
-        android:layout_width="65dp"
-        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/regular"
@@ -39,8 +40,8 @@
 
     <EditText
         android:id="@+id/otp_three_edit_text"
-        android:layout_width="65dp"
-        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/regular"
@@ -54,8 +55,8 @@
 
     <EditText
         android:id="@+id/otp_four_edit_text"
-        android:layout_width="65dp"
-        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
