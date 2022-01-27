@@ -47,6 +47,7 @@ public class WalletAddMoneyActivity extends AppCompatActivity implements IServic
 
         Toolbar toolbar = (Toolbar)findViewById(R.id.activity_toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitleTextColor(getResources().getColor(R.color.white));
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_left_arrow));
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

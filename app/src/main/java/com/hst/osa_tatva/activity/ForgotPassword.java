@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -30,7 +31,7 @@ public class ForgotPassword extends AppCompatActivity implements View.OnClickLis
     private static final String TAG = ForgotPassword.class.getName();
 
     private LinearLayout checkLayout;
-    private Button send;
+    private TextView send;
     private ImageView closeStatus;
     private TextInputEditText mailId;
     private ServiceHelper serviceHelper;
@@ -42,6 +43,7 @@ public class ForgotPassword extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_forgot_password);
         Toolbar toolbar = (Toolbar) findViewById(R.id.activity_toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitleTextColor(getResources().getColor(R.color.white));
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_left_arrow));
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
